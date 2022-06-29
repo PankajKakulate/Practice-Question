@@ -1,0 +1,36 @@
+/////////////////////////////////////////////////////////////////
+// Function name : SearchLast()
+// Description   : Write a generic program which accept N values from user.  search Last occurrence of any specific value.
+// Input         : T, int,T
+// Output        : int
+// Date          : 23/06/2022
+// Author        : Pankaj Keda Kakulate
+/////////////////////////////////////////////////////////////////
+#include<iostream>
+using namespace std;
+template<class T>
+int SearchLast(T *arr,int iSize,T No){
+    int icnt=0;
+    for(icnt=iSize;icnt>0;icnt--){
+        if(arr[icnt]==No){
+            break;
+        }
+    }
+    return icnt+1;
+    }
+int main(){
+    int arr[]={10,20,30,10,30,40,10,40,10};
+    int iRet=SearchLast(arr,9,40);
+    cout<<iRet<<endl;
+
+    return 0;
+    }
+
+/*
+//////////////////////////////////////////////////////////////
+input           :10,20,30,10,30,40,10,40,10
+                 
+output          : 8
+Time Complexity : O(N)
+//////////////////////////////////////////////////////////////
+*/
