@@ -1,0 +1,36 @@
+/////////////////////////////////////////////////////////////////
+// Accept 1 number from user and print that number of * on screen
+/////////////////////////////////////////////////////////////////
+#include<stdio.h>
+/////////////////////////////////////////////////////////////////
+//Function Name : Display
+//Description   : print n times * on screen 
+//input         : Integer
+//output        : Void
+//Date          : 24/04/2022
+//Auther        : Pankaj Keda Kakulate
+/////////////////////////////////////////////////////////////////
+
+void Display(int iNo){
+   
+    while (iNo>0)
+    {
+        printf(" * ");
+        iNo--;
+    }
+    printf("\n");
+}
+int main(){
+    int iValue=0;
+    
+    printf("How many times you want to print * on screen\n");
+    scanf("%d",&iValue);
+
+    Display(iValue);
+    return 0;
+
+}
+///////////////////////////////////////////////////////////////
+//input    : 5
+//output   : * * * * *
+///////////////////////////////////////////////////////////////
